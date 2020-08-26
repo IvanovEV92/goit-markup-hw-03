@@ -36,8 +36,19 @@ ul {
 	margin: 0;
 }
 
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
 .link {
 	text-decoration: none;
+	color: var(--color-main-text);
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
 }
 .container {
 	width: 1200px;
@@ -58,11 +69,6 @@ ul {
 }
 .site-nav-list {
 	display: flex;
-	color: var(--color-main-text);
-	font-style: normal;
-	font-weight: 400;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
 }
 
 .site-nav-item {
@@ -193,11 +199,6 @@ section .hidden {
 .we-are-doing-item:not(:last-child) {
 	margin-right: 30px;
 }
-.img {
-	display: block;
-	max-width: 100%;
-	height: auto;
-}
 
 .we-are-doing-list {
 	display: flex;
@@ -219,6 +220,8 @@ section .hidden {
 	line-height: 1.19;
 	text-align: center;
 	letter-spacing: 0.03em;
+	margin-bottom: 10px;
+	margin-top: 30px;
 }
 .team p {
 	font-style: normal;
@@ -226,6 +229,7 @@ section .hidden {
 	font-size: 16px;
 	line-height: 1.19;
 	text-align: center;
+	margin-bottom: 30px;
 }
 .team-item:not(:last-child) {
 	margin-right: 30px;
@@ -236,25 +240,37 @@ section .hidden {
 	flex-wrap: wrap;
 	margin-top: 50px;
 }
+.team-item {
+	width: 270px;
+	background-color: var(--primary-bg-color);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+}
+
 /* Футер */
 .ftr {
 	background-color: var(--secondary-bg-color);
 	color: var(--primary-bg-color);
-}
-
-.ftr {
 	font-size: 26px;
 	line-height: 1.19;
 	letter-spacing: 0.03em;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
+
 .ftr p {
 	font-size: 14px;
 	line-height: 1.71;
 	font-style: normal;
 	color: var(--white-text-color);
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+.ftr .logo {
+	color: var(--primary-bg-color);
 }
 
-.ftr .ftr-contacts {
+.ftr .ftr-contacts-item {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
@@ -262,8 +278,9 @@ section .hidden {
 	letter-spacing: 0.03em;
 	color: var(--color-secondary-text);
 }
-.ftr .ftr-contacts:hover,
-.ftr .ftr-contacts:focus {
+
+.ftr .ftr-contacts-items:hover,
+.ftr .ftr-contacts-item:focus {
 	color: var(--primary-bg-color);
 }
 
