@@ -41,6 +41,9 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+.border {
+	border-top: 1px solid #ececec;
+}
 
 .link {
 	text-decoration: none;
@@ -59,25 +62,21 @@ img {
 }
 /* Шапка сайта  */
 .container.header {
-	display: flex;
 	padding-top: 24px;
 	padding-bottom: 25px;
 	align-items: center;
 }
-.main-header {
+
+.flexbox {
 	display: flex;
-}
-.site-nav-list {
-	display: flex;
+	align-items: center;
 }
 
 .site-nav-item {
 	margin-right: 50px;
 }
 .site-contacts-list {
-	display: flex;
 	margin-left: auto;
-	align-items: center;
 }
 
 .site-nav-list .link:hover,
@@ -178,7 +177,6 @@ section .hidden {
 	margin-bottom: 0px;
 }
 .advantages-list {
-	display: flex;
 	flex-wrap: wrap;
 	padding-top: 94px;
 }
@@ -199,7 +197,6 @@ section .hidden {
 }
 
 .we-are-doing-list {
-	display: flex;
 	flex-wrap: wrap;
 	margin-top: 50px;
 }
@@ -234,7 +231,6 @@ section .hidden {
 }
 
 .team-list {
-	display: flex;
 	flex-wrap: wrap;
 	margin-top: 50px;
 }
