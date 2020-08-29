@@ -59,6 +59,8 @@ img {
 	margin-left: auto;
 	padding-left: 15px;
 	padding-right: 15px;
+	padding-top: 94px;
+	padding-bottom: 94px;
 }
 /* Шапка сайта  */
 .container.header {
@@ -176,9 +178,11 @@ section .hidden {
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
+.advantages .container {
+	padding-bottom: 0px;
+}
 .advantages-list {
 	flex-wrap: wrap;
-	padding-top: 94px;
 }
 .advantages-list-item:not(:last-child) {
 	margin-right: 30px;
@@ -188,10 +192,6 @@ section .hidden {
 }
 
 /* Чем мы занимаемся  */
-.we-are-doing {
-	padding-top: 94px;
-	padding-bottom: 94px;
-}
 .we-are-doing-item:not(:last-child) {
 	margin-right: 30px;
 }
@@ -204,8 +204,6 @@ section .hidden {
 /* "Наша команда */
 .team {
 	background-color: var(--color-bg-team);
-	padding-top: 94px;
-	padding-bottom: 94px;
 }
 .team h3 {
 	margin-top: 0px;
@@ -248,8 +246,12 @@ section .hidden {
 	font-size: 26px;
 	line-height: 1.19;
 	letter-spacing: 0.03em;
-	padding-top: 60px;
+	padding-top: 70px;
 	padding-bottom: 60px;
+}
+.ftr .container {
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
 .ftr p {
@@ -281,6 +283,7 @@ section .hidden {
 /* Portfolio.html */
 
 /* Кнопки фильтрации */
+
 .btn-list {
 	font-family: inherit;
 	font-weight: 500;
@@ -290,7 +293,6 @@ section .hidden {
 	letter-spacing: 0.03em;
 	display: flex;
 	justify-content: center;
-	margin-top: 94px;
 }
 
 .btn-list .button {
@@ -343,7 +345,6 @@ section .hidden {
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 34px;
-	margin-bottom: 94px;
 }
 .portfolio-list-item-info {
 	margin-top: 20px;
