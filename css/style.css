@@ -54,7 +54,7 @@ img {
 	letter-spacing: 0.02em;
 }
 .container {
-	width: 1200px;
+	width: 1230px;
 	margin-right: auto;
 	margin-left: auto;
 	padding-left: 15px;
@@ -62,10 +62,12 @@ img {
 	padding-top: 94px;
 	padding-bottom: 94px;
 }
+.no-padding {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
 /* Шапка сайта  */
 .container.header {
-	padding-top: 24px;
-	padding-bottom: 25px;
 	align-items: center;
 }
 
@@ -77,10 +79,16 @@ img {
 .site-nav-item {
 	margin-right: 50px;
 }
+
 .site-contacts-list {
 	margin-left: auto;
 }
-
+.site-nav-list .link,
+.site-contacts-list .link {
+	display: block;
+	padding-top: 24px;
+	padding-bottom: 25px;
+}
 .site-nav-list .link:hover,
 .site-nav-list .link:focus,
 .site-nav-list .link.current,
@@ -88,6 +96,7 @@ img {
 .site-contacts-list .link:hover,
 .site-contacts-list .link:focus {
 	color: var(--accent);
+	cursor: pointer;
 }
 
 .site-contacts-item:first-child {
@@ -318,6 +327,7 @@ section .hidden {
 .btn-list .button:focus {
 	background-color: var(--accent);
 	color: var(--primary-bg-color);
+	cursor: pointer;
 }
 
 /* Секция проектов */
